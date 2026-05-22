@@ -4,6 +4,8 @@ import { TrustBrandItem } from '../molecules/TrustBrandItem';
 const brands = [
   { iconAddress: '/company_1.svg', name: 'Wistupiku' },
   { iconAddress: '/company_2.svg', name: 'Constructora Montaño' },
+  { iconAddress: '/brand3.svg', name: 'Brand 3' },
+  { iconAddress: '/brand4.svg', name: 'Brand 4' },
 ];
 
 export function TrustBar() {
