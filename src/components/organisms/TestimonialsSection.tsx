@@ -4,18 +4,18 @@ import { StarRating } from '../atoms/StarRating';
 const testimonials = [
   {
     quote:
-      'La mesa de nogal superó mis expectativas. Se siente la calidad en cada detalle, es el corazón de mi casa.',
-    author: 'Elena Martínez',
+      'En Palo\'s Snack recomendamos totalmente a Amara Muebles. Sus muebles son elegantes, resistentes y perfectos para negocios de alto tráfico como el nuestro. Calidad y diseño que realmente se notan. 👌',
+    author: "Palo's Snack",
   },
   {
     quote:
-      'Un servicio impecable y una pieza de diseño que se siente atemporal. Volveré a comprar sin duda.',
-    author: 'Carlos Ruiz',
+      'Tengo preferencia por Amara Muebles, por su calidad, versatilidad y compromiso con el cliente!',
+    author: 'Señora Linet Torrico — Cliente de varios años',
   },
   {
     quote:
-      'Buscaba algo único y artesanal. Amara Muebles captó exactamente lo que necesitaba para mi estudio.',
-    author: 'Sofía Delgado',
+      'Como diseñadores, no hay nada más gratificante que ver nuestros proyectos hechos realidad con tanta precisión. Trabajar con Amara Muebles ha sido una experiencia excelente; la calidad de su fabricación, el cuidado en los detalles y el respeto por los materiales son impecables. Un equipo totalmente recomendado para quienes buscan acabados de primer nivel.',
+    author: 'Minimo, Diseño y Construcciones',
   },
 ];
 
