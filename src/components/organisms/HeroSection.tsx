@@ -8,7 +8,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: 'url(/Hero.png)',
+          backgroundImage: 'url(/Hero.webp)',
           animation: `heroScale 1.4s ${EASE} both`,
         }}
       />
