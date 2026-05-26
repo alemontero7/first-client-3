@@ -1,60 +1,108 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-BO">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <title>Amara Muebles | El arte en tu hogar</title>
+    <link rel="alternate" hreflang="es-BO" href="https://amaramuebles.bo/" />
+
+    <!-- DNS prefetch + preconnect -->
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+
+    <title>Amara Muebles | Muebles artesanales de madera en Cochabamba, Bolivia</title>
 
     <!-- Primary meta -->
-    <meta name="description" content="Muebles artesanales de roble, nogal y teca hechos a mano por maestros bolivianos. Amara Muebles — calidad de autor para tu hogar o proyecto comercial." />
-    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Muebles artesanales de cedro, roble y maderas alternativas tallados a mano por maestros bolivianos. Sofás, comedores, mesas y sillones con calidad de autor. Colcapirhua, Cochabamba." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://amaramuebles.bo/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Amara Muebles" />
-    <meta property="og:title" content="Amara Muebles | Muebles artesanales de madera en Bolivia" />
-    <meta property="og:description" content="Muebles artesanales de roble, nogal y teca hechos a mano por maestros bolivianos. Calidad de autor para tu hogar o proyecto comercial." />
+    <meta property="og:title" content="Amara Muebles | Muebles artesanales de madera en Cochabamba, Bolivia" />
+    <meta property="og:description" content="Muebles artesanales de cedro, roble y maderas alternativas tallados a mano por maestros bolivianos. Sofás, comedores, mesas y sillones." />
     <meta property="og:url" content="https://amaramuebles.bo/" />
-    <meta property="og:image" content="https://amaramuebles.bo/og-image.jpg" />
+    <meta property="og:image" content="https://amaramuebles.bo/Products/Sofas/Sofa1/foto1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="es_BO" />
+    <meta property="og:updated_time" content="2026-05-25T12:00:00-04:00" />
+    <meta property="article:modified_time" content="2026-05-25T12:00:00-04:00" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Amara Muebles | Muebles artesanales de madera en Bolivia" />
-    <meta name="twitter:description" content="Muebles artesanales de roble, nogal y teca hechos a mano por maestros bolivianos." />
-    <meta name="twitter:image" content="https://amaramuebles.bo/og-image.jpg" />
+    <meta name="twitter:description" content="Muebles artesanales de cedro, roble y maderas alternativas tallados a mano por maestros bolivianos." />
+    <meta name="twitter:image" content="https://amaramuebles.bo/Products/Sofas/Sofa1/foto1.webp" />
 
-    <!-- JSON-LD LocalBusiness -->
+    <!-- JSON-LD: Organization + LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Amara Muebles",
-      "description": "Muebles artesanales de madera en Bolivia. Roble, nogal y teca trabajados por maestros artesanos.",
-      "url": "https://amaramuebles.bo",
-      "telephone": "+591-79963639",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "La Paz",
-        "addressCountry": "BO"
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "09:00",
-          "closes": "18:00"
+          "@type": "Organization",
+          "@id": "https://amaramuebles.bo/#organization",
+          "name": "Amara Muebles",
+          "url": "https://amaramuebles.bo",
+          "logo": "https://amaramuebles.bo/logo.svg",
+          "sameAs": [
+            "https://www.facebook.com/amaramuebles",
+            "https://www.instagram.com/amaramuebles"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://amaramuebles.bo/#business",
+          "name": "Amara Muebles",
+          "description": "Muebles artesanales de cedro, roble y maderas alternativas tallados a mano por maestros bolivianos en Colcapirhua, Cochabamba.",
+          "url": "https://amaramuebles.bo",
+          "telephone": "+591 79785827",
+          "priceRange": "BS. 480 - BS. 28000",
+          "image": "https://amaramuebles.bo/Products/Sofas/Sofa1/foto1.webp",
+          "parentOrganization": { "@id": "https://amaramuebles.bo/#organization" },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Km 9 Blanco Galindo Norte, Calle Hilarión Daza",
+            "addressLocality": "Colcapirhua",
+            "addressRegion": "Cochabamba",
+            "addressCountry": "BO"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -17.3936,
+            "longitude": -66.1570
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "09:00",
+              "closes": "12:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "14:00",
+              "closes": "18:00"
+            }
+          ]
         }
-      ],
-      "sameAs": []
+      ]
     }
     </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="padding:2rem;font-family:sans-serif;text-align:center">
+        <h1>Amara Muebles</h1>
+        <p>Muebles artesanales de cedro, roble y maderas alternativas. Colcapirhua, Cochabamba, Bolivia.</p>
+        <p>Contacto vía WhatsApp: <a href="https://wa.me/59179785827">+591 79785827</a></p>
+        <p>Horarios: Lun–Vie 9:00–12:00 y 14:00–18:00</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

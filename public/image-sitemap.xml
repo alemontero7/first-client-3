@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://amaramuebles.bo/</loc>
+    <image:image>
+      <image:loc>https://amaramuebles.bo/Products/Sofas/Sofa1/foto1.webp</image:loc>
+      <image:caption>Sala amoblada por Amara Muebles</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://amaramuebles.bo/Products/Sillones/Sillon1/Azul.webp</image:loc>
+      <image:caption>Sillón de cuero genuino Amara</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://amaramuebles.bo/catalogo</loc>
+    <!-- Sofá Amara 1 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa1/foto0.webp</image:loc><image:caption>Sofá Amara 1 - Eucalipto y Lino Natural</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa1/foto1.webp</image:loc><image:caption>Sofá Amara 1 - Vista principal</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa1/foto2.webp</image:loc><image:caption>Sofá Amara 1 - Detalle</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa1/foto3.webp</image:loc><image:caption>Sofá Amara 1 - Ambiente</image:caption></image:image>
+    <!-- Sofá Amara 2 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa2/foto0.webp</image:loc><image:caption>Sofá Amara 2 - Madera Maciza y Chenilla</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa2/foto1.webp</image:loc><image:caption>Sofá Amara 2 - Esquinero en L</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa2/foto2.webp</image:loc><image:caption>Sofá Amara 2 - Detalle de estructura</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa2/foto3.webp</image:loc><image:caption>Sofá Amara 2 - Ambiente amplio</image:caption></image:image>
+    <!-- Sofá Amara 3 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa3/foto0.webp</image:loc><image:caption>Sofá Amara 3 - Cuero Sintético Premium</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa3/foto1.webp</image:loc><image:caption>Sofá Amara 3 - Dos plazas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa3/foto2.webp</image:loc><image:caption>Sofá Amara 3 - Color grafito</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sofas/Sofa3/foto3.webp</image:loc><image:caption>Sofá Amara 3 - Sala moderna</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://amaramuebles.bo/catalogo?categoria=comedores</loc>
+    <!-- Comedor Amara 1 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor1/foto0.webp</image:loc><image:caption>Comedor Amara 1 - Vidrio Templado y Acero</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor1/foto1.webp</image:loc><image:caption>Comedor Amara 1 - Minimalista 6 personas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor1/foto2.webp</image:loc><image:caption>Comedor Amara 1 - Vista lateral</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor1/foto3.webp</image:loc><image:caption>Comedor Amara 1 - Detalle</image:caption></image:image>
+    <!-- Comedor Amara 2 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor2/foto0.webp</image:loc><image:caption>Comedor Amara 2 - Pino Macizo Barnizado</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor2/foto1.webp</image:loc><image:caption>Comedor Amara 2 - Rústico 8 personas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor2/foto2.webp</image:loc><image:caption>Comedor Amara 2 - Vista detalle</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor2/foto3.webp</image:loc><image:caption>Comedor Amara 2 - Cuero genuino</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor2/foto4.webp</image:loc><image:caption>Comedor Amara 2 - Ambiente completo</image:caption></image:image>
+    <!-- Comedor Amara 3 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor3/foto0.webp</image:loc><image:caption>Comedor Amara 3 - Mármol Sintético y Roble Macizo</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor3/foto1.webp</image:loc><image:caption>Comedor Amara 3 - Bouclé beige</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor3/foto2.webp</image:loc><image:caption>Comedor Amara 3 - Alto impacto visual</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor3/foto3.webp</image:loc><image:caption>Comedor Amara 3 - Blanco Carrara</image:caption></image:image>
+    <!-- Comedor Amara 4 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor4/foto0.webp</image:loc><image:caption>Comedor Amara 4 - Roble Vaporizado y Hierro</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor4/foto1.webp</image:loc><image:caption>Comedor Amara 4 - Industrial</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor4/foto2.webp</image:loc><image:caption>Comedor Amara 4 - Tablero de roble</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Comedores/Comedor4/foto3.webp</image:loc><image:caption>Comedor Amara 4 - Estética urbana</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://amaramuebles.bo/catalogo?categoria=mesas</loc>
+    <!-- Mesa Amara 1 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa1/foto0.webp</image:loc><image:caption>Mesa Amara 1 - Cedro Boliviano extensible</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa1/foto1.webp</image:loc><image:caption>Mesa Amara 1 - Sistema de extensión</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa1/foto2.webp</image:loc><image:caption>Mesa Amara 1 - Acabado natural mate</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa1/foto3.webp</image:loc><image:caption>Mesa Amara 1 - 6 a 10 comensales</image:caption></image:image>
+    <!-- Mesa Amara 2 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa2/foto0.webp</image:loc><image:caption>Mesa Amara 2 - Teka Masisa circular</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa2/foto1.webp</image:loc><image:caption>Mesa Amara 2 - Base torneada</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa2/foto2.webp</image:loc><image:caption>Mesa Amara 2 - 4 a 6 comensales</image:caption></image:image>
+    <!-- Mesa Amara 3 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa3/foto0.webp</image:loc><image:caption>Mesa Amara 3 - Vidrio Templado y Acero</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa3/foto1.webp</image:loc><image:caption>Mesa Amara 3 - Centro rectangular</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Mesas/Mesa3/foto2.webp</image:loc><image:caption>Mesa Amara 3 - Acero inoxidable cepillado</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://amaramuebles.bo/catalogo?categoria=sillas</loc>
+    <!-- Silla Amara 1 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla1/foto0.webp</image:loc><image:caption>Silla Amara 1 - Roble Macizo</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla1/foto1.webp</image:loc><image:caption>Silla Amara 1 - Tela antimanchas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla1/foto2.webp</image:loc><image:caption>Silla Amara 1 - Patas torneadas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla1/foto3.webp</image:loc><image:caption>Silla Amara 1 - Comedor contemporáneo</image:caption></image:image>
+    <!-- Silla Amara 2 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla2/foto0.webp</image:loc><image:caption>Silla Amara 2 - Haya Natural y Cuero Genuino</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla2/foto1.webp</image:loc><image:caption>Silla Amara 2 - Diseño nórdico</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla2/foto2.webp</image:loc><image:caption>Silla Amara 2 - Patas cónicas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla2/foto3.webp</image:loc><image:caption>Silla Amara 2 - Ensamble mortaja y espiga</image:caption></image:image>
+    <!-- Silla Amara 3 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla3/foto0.webp</image:loc><image:caption>Silla Amara 3 - Madera Lacada y Terciopelo</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla3/foto1.webp</image:loc><image:caption>Silla Amara 3 - Blanco mate y azul marino</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla3/foto2.webp</image:loc><image:caption>Silla Amara 3 - Respaldo anatómico</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillas/Silla3/foto3.webp</image:loc><image:caption>Silla Amara 3 - Estilo glam</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://amaramuebles.bo/catalogo?categoria=sillones</loc>
+    <!-- Sillón Amara 1 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon1/Azul.webp</image:loc><image:caption>Sillón Amara 1 - Cuero Genuino y Nogal</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon1/foto1.webp</image:loc><image:caption>Sillón Amara 1 - Reclinable de relax</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon1/foto2.webp</image:loc><image:caption>Sillón Amara 1 - Base giratoria de nogal</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon1/foto3.webp</image:loc><image:caption>Sillón Amara 1 - Costuras artesanales</image:caption></image:image>
+    <!-- Sillón Amara 2 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon2/foto0.webp</image:loc><image:caption>Sillón Amara 2 - Tela Bouclé y Caoba</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon2/foto1.webp</image:loc><image:caption>Sillón Amara 2 - Estilo orejero clásico</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon2/foto2.webp</image:loc><image:caption>Sillón Amara 2 - Botones forrados</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon2/foto3.webp</image:loc><image:caption>Sillón Amara 2 - Patas torneadas a mano</image:caption></image:image>
+    <!-- Sillón Amara 3 -->
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon3/foto0.webp</image:loc><image:caption>Sillón Amara 3 - Terciopelo Esmeralda y Metal Dorado</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon3/foto1.webp</image:loc><image:caption>Sillón Amara 3 - Pieza de autor</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon3/foto2.webp</image:loc><image:caption>Sillón Amara 3 - Cojines de plumas</image:caption></image:image>
+    <image:image><image:loc>https://amaramuebles.bo/Products/Sillones/Sillon3/foto3.webp</image:loc><image:caption>Sillón Amara 3 - Sofisticación y color</image:caption></image:image>
+  </url>
+</urlset>

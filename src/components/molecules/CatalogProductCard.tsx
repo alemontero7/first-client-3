@@ -10,20 +10,29 @@ export const CatalogProductCard: React.FC<{ product: Product }> = ({ product }) 
   const waUrl = productWhatsappUrl(product.name);
   const src = product.images[1] ?? product.images[0];
 
+  const handleNavigate = () => navigate(`/producto/${product.id}`);
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleNavigate();
+    }
+  };
+
   return (
     <div className="group flex flex-col">
-      {/* Image — click navigates to detail; WhatsApp button stops propagation */}
       <div
         role="button"
         tabIndex={0}
         aria-label={`Ver detalle de ${product.name}`}
-        onClick={() => navigate(`/producto/${product.id}`)}
-        onKeyDown={(e) => e.key === 'Enter' && navigate(`/producto/${product.id}`)}
-        className="relative w-full aspect-[4/3] bg-muted mb-4 overflow-hidden cursor-pointer"
+        onClick={handleNavigate}
+        onKeyDown={handleKeyDown}
+        className="relative w-full aspect-[4/3] bg-muted mb-4 overflow-hidden cursor-pointer focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none rounded-sm"
       >
         <img
           alt={product.name}
           src={src}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />

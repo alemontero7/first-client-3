@@ -1,0 +1,17 @@
+# Amara Muebles
+
+> Muebles artesanales de madera. Roble, cedro, nogal y maderas alternativas trabajadas por maestros artesanos bolivianos. Colcapirhua, Cochabamba, Bolivia.
+
+## Pages
+
+- **Inicio**: https://amaramuebles.bo/ — Vitrina principal de la marca y productos destacados.
+- **Catálogo**: https://amaramuebles.bo/catalogo — Colección completa de muebles: sofás, comedores, mesas, sillas y sillones.
+- **Servicios**: https://amaramuebles.bo/servicios — Diseño de interiores, render 3D y amoblamiento a medida.
+- **Producto**: https://amaramuebles.bo/producto/:id — Ficha individual de cada mueble con materiales, dimensiones y precio.
+
+## Contacto
+
+- WhatsApp: +591 79785827
+- Facebook: https://www.facebook.com/amaramuebles
+- Dirección: Km 9 Blanco Galindo Norte, Calle Hilarión Daza, Colcapirhua, Cochabamba, Bolivia
+- Horarios: Lunes a Viernes 9:00–12:00 y 14:00–18:00

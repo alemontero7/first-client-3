@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MessageCircle, ShieldCheck, Truck } from 'lucide-react';
 import { Navbar } from '../components/organisms/Navbar';
@@ -6,6 +7,7 @@ import { Footer } from '../components/organisms/Footer';
 import { Breadcrumbs } from '../components/atoms/Breadcrumbs';
 import { products } from '../data/products';
 import { productWhatsappUrl } from '../lib/whatsapp';
+import { productSchema, injectJsonLd, breadcrumbSchema } from '../lib/schema';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -37,7 +39,7 @@ export const ProductDetailPage: React.FC = () => {
           <button
             type="button"
             onClick={() => navigate('/catalogo')}
-            className="px-6 py-3 bg-[var(--cx-color-walnut)] text-white uppercase tracking-widest text-xs font-medium hover:opacity-80 transition-opacity"
+            className="px-6 py-3 bg-cx-walnut text-primary-foreground uppercase tracking-widest text-xs font-medium hover:opacity-80 transition-opacity"
           >
             Ver Catálogo
           </button>
@@ -65,6 +67,27 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
 
   const waUrl = productWhatsappUrl(product.name);
 
+  useEffect(() => {
+    const cleanup = injectJsonLd(
+      productSchema({
+        name: product.name,
+        description: product.description,
+        price: product.price,
+        images: product.images,
+        material: product.material,
+        dimensions: product.dimensions,
+        weight: product.weight,
+        url: `https://amaramuebles.bo/producto/${product.id}`,
+      }),
+      breadcrumbSchema([
+        { name: 'Inicio', url: 'https://amaramuebles.bo/' },
+        { name: 'Catálogo', url: 'https://amaramuebles.bo/catalogo' },
+        { name: product.name },
+      ]),
+    );
+    return cleanup;
+  }, [product]);
+
   const breadcrumbs = [
     { label: 'Inicio', href: '/' },
     { label: 'Catálogo', href: '/catalogo' },
@@ -73,6 +96,10 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground">
+      <Helmet>
+        <title>{product.name}</title>
+        <meta name="description" content={`${product.description.slice(0, 155)}`} />
+      </Helmet>
       <Navbar />
 
       <main className="pt-32 pb-24 max-w-[1200px] mx-auto px-6">
@@ -106,7 +133,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
                     aria-label={`Ver imagen ${i + 1}`}
                     className={`relative aspect-square bg-muted overflow-hidden transition-all duration-200 ${
                       i === activeIndex
-                        ? 'ring-2 ring-[var(--cx-color-walnut)] ring-offset-2'
+                        ? 'ring-2 ring-cx-walnut ring-offset-2'
                         : 'opacity-60 hover:opacity-100'
                     }`}
                   >
@@ -128,7 +155,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3">
               {product.name}
             </h1>
-            <p className="text-2xl font-semibold text-[var(--cx-color-walnut)] mb-6">
+            <p className="text-2xl font-semibold text-cx-walnut mb-6">
               Bs. {product.price.toLocaleString()}
             </p>
 
@@ -190,7 +217,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 w-full py-4 bg-[var(--cx-color-walnut)] text-white uppercase tracking-widest text-xs font-semibold hover:opacity-85 active:scale-[0.98] transition-all duration-200"
+              className="flex items-center justify-center gap-3 w-full py-4 bg-cx-walnut text-primary-foreground uppercase tracking-widest text-xs font-semibold hover:opacity-85 active:scale-[0.98] transition-all duration-200"
             >
               <MessageCircle className="w-4 h-4" />
               Pedir por WhatsApp

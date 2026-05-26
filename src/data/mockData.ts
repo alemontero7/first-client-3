@@ -84,8 +84,8 @@ export const trustBadges = [
 
 export const promoData = {
   title: 'La Colección Esencial',
-  description: 'Renueva tu espacio con nuestro Set de Comedor Lignum. Mesa y 6 sillas de nogal con un descuento especial de temporada.',
-  image: 'https://lh3.googleusercontent.com/aida/ADBb0uj4Pdj2uYFZiDGz2D4NKBTO3V9A7gKjWcIdtzwGb0YqAo7LrbOuWfcgYh85wqVIGdyiG11yNl4JQ622UVWCXfM4LbxB4clNohh5oxyxDWXtWNdYy2eF01Vs5DxRm6hWoWlTU6pA8ZR9goHCnef8Eg6awDCHaFASkirgX8fgnds8o-hu6B6iWfWCOkTZMTkD6rckCJJslWwsmplzhQrovsj4kTojxtNrxPhmA0U7eMbp1kRAPA2oEBxd33a9Qp9Q0JnK9A-nn296QEE',
+  description: 'Renueva tu espacio con piezas que nacen del oficio artesanal. Cada mueble es tallado a mano con maderas bolivianas para durar generaciones.',
+  image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80',
 };
 
 // WhatsApp contact number (from your requested defaults)

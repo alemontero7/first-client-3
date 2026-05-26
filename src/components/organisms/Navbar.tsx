@@ -177,7 +177,7 @@ export function Navbar() {
             onClick={() => navigate('/catalogo')}
             className={`hidden md:block px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-500 active:scale-95 ${
               isCatalog
-                ? 'bg-[var(--cx-color-walnut)] text-white'
+                ? 'bg-cx-walnut text-white'
                 : 'bg-muted text-cx-walnut hover:opacity-70'
             }`}
           >
@@ -265,7 +265,7 @@ export function Navbar() {
             }}
             className={`py-3 uppercase tracking-widest text-xs font-medium w-full transition-opacity ${
               isCatalog
-                ? 'bg-[var(--cx-color-walnut)] text-white'
+                ? 'bg-cx-walnut text-white'
                 : 'bg-muted text-cx-walnut hover:opacity-70'
             }`}
           >

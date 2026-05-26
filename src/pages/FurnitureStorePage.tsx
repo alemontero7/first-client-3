@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { PageLayout } from '../components/templates/PageLayout';
 import { Navbar } from '../components/organisms/Navbar';
 import { HeroSection } from '../components/organisms/HeroSection';
@@ -14,6 +15,10 @@ import { Footer } from '../components/organisms/Footer';
 export function FurnitureStorePage() {
   return (
     <PageLayout>
+      <Helmet>
+        <title>Inicio</title>
+        <meta name="description" content="Muebles artesanales de cedro, roble y maderas alternativas tallados a mano por maestros bolivianos. Sofás, comedores, mesas y sillones con calidad de autor. Colcapirhua, Cochabamba." />
+      </Helmet>
       <Navbar />
       <main className="pt-20">
         <HeroSection />

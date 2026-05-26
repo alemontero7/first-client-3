@@ -1,13 +1,14 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Navbar } from '../organisms/Navbar';
 import { SidebarFilters } from '../organisms/SidebarFilters';
 import { PromoBanner } from '../organisms/PromoBanner';
-import { TrustSection } from '../organisms/TrustSection';
 import { Footer } from '../organisms/Footer';
 import { CatalogProductCard } from '../molecules/CatalogProductCard';
 import { Breadcrumbs } from '../atoms/Breadcrumbs';
+import { Reveal } from '../atoms/Reveal';
 import { products } from '../../data/products';
+import { breadcrumbSchema, injectJsonLd } from '../../lib/schema';
 
 // ── Sort ───────────────────────────────────────────────────────────────────
 
@@ -43,6 +44,17 @@ const breadcrumbs = [
 export const CatalogTemplate: React.FC = () => {
   const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set());
   const [sortOrder, setSortOrder] = useState<SortOrder>('recommended');
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const cleanup = injectJsonLd(
+      breadcrumbSchema([
+        { name: 'Inicio', url: 'https://amaramuebles.bo/' },
+        { name: 'Catálogo' },
+      ]),
+    );
+    return cleanup;
+  }, []);
 
   const toggleCategory = (cat: string) => {
     setActiveCategories((prev) => {
@@ -56,16 +68,14 @@ export const CatalogTemplate: React.FC = () => {
   const displayedProducts = useMemo(() => {
     let list = [...products];
 
-    // Filter by category
     if (activeCategories.size > 0) {
       list = list.filter((p) => activeCategories.has(categoryFromId(p.id)));
     }
 
-    // Sort
     switch (sortOrder) {
-      case 'price-asc':  return [...list].sort((a, b) => a.price - b.price);
-      case 'price-desc': return [...list].sort((a, b) => b.price - a.price);
-      case 'newest':     return [...list].reverse();
+      case 'price-asc':  return list.sort((a, b) => a.price - b.price);
+      case 'price-desc': return list.sort((a, b) => b.price - a.price);
+      case 'newest':     return list.reverse();
       default:           return list;
     }
   }, [activeCategories, sortOrder]);
@@ -77,74 +87,98 @@ export const CatalogTemplate: React.FC = () => {
       <main className="pt-32 pb-20 max-w-[1200px] mx-auto px-6">
 
         {/* Breadcrumbs */}
-        <Breadcrumbs items={breadcrumbs} className="mb-10" />
+        <Reveal direction="none" delay={0}>
+          <Breadcrumbs items={breadcrumbs} className="mb-10" />
+        </Reveal>
 
         {/* Page Header */}
         <section className="mb-16 text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Colección Completa
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Descubre nuestra selección de muebles diseñados con maderas nobles y sostenibles.
-            Cada pieza celebra la belleza natural del roble, nogal y teca, aportando calidez y
-            elegancia atemporal a tu hogar.
-          </p>
+          <Reveal direction="none" delay={80}>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Colección Completa
+            </h1>
+          </Reveal>
+          <Reveal direction="none" delay={160}>
+            <p className="text-lg text-muted-foreground">
+              Cada pieza es tallada a mano por nuestros artesanos. Cedro, eucalipto, 
+              pino y maderas seleccionadas, trabajadas con oficio para dar calidez y 
+              carácter a tu hogar.
+            </p>
+          </Reveal>
         </section>
 
         <div className="flex flex-col lg:flex-row gap-12">
 
           {/* Sidebar Filters */}
-          <SidebarFilters
-            activeCategories={activeCategories}
-            onToggleCategory={toggleCategory}
-          />
+          <Reveal direction="none" delay={200}>
+            <SidebarFilters
+              activeCategories={activeCategories}
+              onToggleCategory={toggleCategory}
+            />
+          </Reveal>
 
           {/* Product Grid */}
           <div className="flex-1">
 
             {/* Toolbar */}
-            <div className="flex justify-between items-center mb-8">
-              <span className="text-sm text-muted-foreground">
-                {displayedProducts.length === products.length
-                  ? `${products.length} productos`
-                  : `${displayedProducts.length} de ${products.length} productos`}
-              </span>
-
-              {/* Sort dropdown — styled with design system */}
-              <div className="relative flex items-center">
-                <select
-                  value={sortOrder}
-                  onChange={(e) => setSortOrder(e.target.value as SortOrder)}
-                  className="appearance-none bg-transparent text-foreground text-xs uppercase tracking-widest cursor-pointer pr-5 pl-0 py-1 border-none focus:outline-none focus:ring-0 font-semibold"
+            <Reveal direction="none" delay={240}>
+              <div className="flex justify-between items-center mb-8">
+                <span
+                  className="text-sm text-muted-foreground transition-opacity duration-300"
+                  key={displayedProducts.length}
                 >
-                  {SORT_OPTIONS.map((opt) => (
-                    <option key={opt.value} value={opt.value} className="normal-case tracking-normal font-normal text-sm bg-background text-foreground">
-                      {opt.label}
-                    </option>
-                  ))}
-                </select>
-                <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none text-muted-foreground" />
+                  {displayedProducts.length === products.length
+                    ? `${products.length} productos`
+                    : `${displayedProducts.length} de ${products.length} productos`}
+                </span>
+
+                <div className="relative flex items-center">
+                  <label htmlFor="catalog-sort" className="sr-only">
+                    Ordenar productos
+                  </label>
+                  <select
+                    id="catalog-sort"
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value as SortOrder)}
+                    className="appearance-none bg-transparent text-foreground text-xs uppercase tracking-widest cursor-pointer pr-5 pl-0 py-3 border-none focus:outline-none focus:ring-0 font-semibold"
+                  >
+                    {SORT_OPTIONS.map((opt) => (
+                      <option key={opt.value} value={opt.value} className="normal-case tracking-normal font-normal text-sm bg-background text-foreground">
+                        {opt.label}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none text-muted-foreground" />
+                </div>
               </div>
-            </div>
+            </Reveal>
 
             {/* Grid or empty state */}
             {displayedProducts.length === 0 ? (
-              <div className="flex flex-col items-center justify-center py-24 text-center">
-                <p className="text-muted-foreground text-sm mb-4">
-                  No hay productos en esta categoría.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setActiveCategories(new Set())}
-                  className="text-xs uppercase tracking-widest text-[var(--cx-color-walnut)] hover:opacity-70 transition-opacity underline underline-offset-4"
-                >
-                  Ver todos los productos
-                </button>
-              </div>
+              <Reveal direction="none" delay={100}>
+                <div className="flex flex-col items-center justify-center py-24 text-center">
+                  <p className="text-muted-foreground text-sm mb-4">
+                    No hay productos en esta categoría.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setActiveCategories(new Set())}
+                    className="text-xs uppercase tracking-widest text-cx-walnut font-semibold hover:opacity-70 transition-opacity underline underline-offset-4"
+                  >
+                    Ver todos los productos
+                  </button>
+                </div>
+              </Reveal>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16">
-                {displayedProducts.map((product) => (
-                  <CatalogProductCard key={product.id} product={product} />
+              <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16 auto-rows-auto">
+                {displayedProducts.map((product, index) => (
+                  <Reveal
+                    key={product.id}
+                    direction="none"
+                    delay={Math.min(index * 60, 800)}
+                  >
+                    <CatalogProductCard product={product} />
+                  </Reveal>
                 ))}
               </div>
             )}
@@ -152,10 +186,9 @@ export const CatalogTemplate: React.FC = () => {
         </div>
 
         {/* Promotional Banner */}
-        <PromoBanner />
-
-        {/* SEO/Trust Section */}
-        <TrustSection />
+        <Reveal direction="none" delay={100}>
+          <PromoBanner />
+        </Reveal>
       </main>
 
       <Footer />
