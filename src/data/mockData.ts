@@ -89,7 +89,7 @@ export const promoData = {
 };
 
 // WhatsApp contact number (from your requested defaults)
-export const WHATSAPP_NUMBER = '59100000000';
+export const WHATSAPP_NUMBER = '59179785827';
 
 export function getWhatsAppLink(productName: string) {
   const text = encodeURIComponent(`Quiero comprar ${productName}`);
