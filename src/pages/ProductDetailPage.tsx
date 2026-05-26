@@ -36,7 +36,7 @@ export const ProductDetailPage: React.FC = () => {
           </p>
           <button
             type="button"
-            onClick={() => navigate('/catalog')}
+            onClick={() => navigate('/catalogo')}
             className="px-6 py-3 bg-[var(--cx-color-walnut)] text-white uppercase tracking-widest text-xs font-medium hover:opacity-80 transition-opacity"
           >
             Ver Catálogo
@@ -67,7 +67,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
 
   const breadcrumbs = [
     { label: 'Inicio', href: '/' },
-    { label: 'Catálogo', href: '/catalog' },
+    { label: 'Catálogo', href: '/catalogo' },
     { label: product.name },
   ];
 

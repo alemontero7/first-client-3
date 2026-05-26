@@ -31,8 +31,7 @@ export function HeroSection() {
             className="text-base text-primary-foreground/80 mb-10 leading-relaxed px-4"
             style={{ animation: `fadeUp 0.9s ${EASE} var(--cx-stagger-3) both` }}
           >
-            Piezas únicas talladas en roble, nogal y teca por maestros artesanos bolivianos.
-            Diseño que respeta la naturaleza y transforma cada espacio.
+            Piezas únicas talladas en roble, cedro y maderas alternativas por maestros artesanos bolivianos.
           </p>
           <div
             style={{ animation: `fadeUp 0.9s ${EASE} var(--cx-stagger-4) both` }}

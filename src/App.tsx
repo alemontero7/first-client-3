@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/catalogo" element={<CatalogPage />} />
         <Route path="/servicios" element={<ServiciosPage />} />
         <Route path="/producto/:id" element={<ProductDetailPage />} />
         <Route path="/" element={<FurnitureStorePage />} />

@@ -1,14 +1,14 @@
 import { Reveal } from '../atoms/Reveal';
 import { Icon } from '../atoms/Icon';
 
-const showrooms = [
+const locations = [
   {
-    city: 'Cochabamba',
-    address: 'Av. Blanco Galindo 123',
-    hours: 'Lun–Vie 9:00–19:00 · Sáb 10:00–15:00',
+    city: 'Colcapirhua',
+    address: 'Km 9 Blanco Galindo Norte, Calle Hilarión Daza',
+    hours: 'Lun–Vie 9:00–12:00 · 14:00–18:00',
     phone: '+591 79785827',
     mapsUrl:
-      'https://maps.google.com/?q=Av.+San+Martín+450,+Equipetrol+Norte,+Santa+Cruz+de+la+Sierra,+Bolivia',
+      'https://maps.google.com/?q=Km+9+Blanco+Galindo+Norte,+Calle+Hilarión+Daza,+Colcapirhua,+Cochabamba,+Bolivia',
   }
 ];
 
@@ -70,14 +70,15 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Showrooms */}
-        {showrooms.map((s) => (
+        {/* Ubicación */}
+        {locations.map((s) => (
           <div key={s.city}>
             <p className="text-[10px] uppercase tracking-[0.25em] text-foreground mb-5 font-semibold">
-              {s.city}
+              Fábrica · {s.city}
             </p>
             <div className="space-y-2 mb-5">
               <p className="text-sm text-muted-foreground">{s.address}</p>
+              <p className="text-xs text-muted-foreground/70 italic">Atendemos desde fábrica · No contamos con tienda física</p>
               <p className="text-sm text-muted-foreground">{s.hours}</p>
               <a
                 href={`tel:${s.phone.replace(/\s/g, '')}`}
@@ -93,7 +94,7 @@ export function Footer() {
               className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-cx-walnut hover:opacity-70 transition-opacity"
             >
               <Icon name="location_on" size="sm" />
-              Ver en Google Maps
+              Cómo llegar
             </a>
           </div>
         ))}

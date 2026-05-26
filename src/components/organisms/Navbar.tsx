@@ -23,7 +23,7 @@ export function Navbar() {
   const location = useLocation();
 
   const isHome = location.pathname === '/';
-  const isCatalog = location.pathname === '/catalog';
+  const isCatalog = location.pathname === '/catalogo';
   const isServicios = location.pathname === '/servicios';
 
   useEffect(() => {
@@ -174,7 +174,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <button
             type="button"
-            onClick={() => navigate('/catalog')}
+            onClick={() => navigate('/catalogo')}
             className={`hidden md:block px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-500 active:scale-95 ${
               isCatalog
                 ? 'bg-[var(--cx-color-walnut)] text-white'
@@ -260,7 +260,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => {
-              navigate('/catalog');
+              navigate('/catalogo');
               setMobileOpen(false);
             }}
             className={`py-3 uppercase tracking-widest text-xs font-medium w-full transition-opacity ${

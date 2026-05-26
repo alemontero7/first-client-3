@@ -1,27 +1,35 @@
-import { Reveal } from '../atoms/Reveal';
-import { contactWhatsappUrl } from '../../lib/whatsapp';
+import { Reveal } from "../atoms/Reveal";
+import { contactWhatsappUrl } from "../../lib/whatsapp";
 
 const materials = [
-  { wood: 'Nogal', origin: 'Valle de Cochabamba' },
-  { wood: 'Roble', origin: 'Santa Cruz' },
-  { wood: 'Teca', origin: 'Tierras del Beni' },
+  { wood: "Nogal", origin: "Valle de Cochabamba" },
+  { wood: "Roble", origin: "Santa Cruz" },
+  { wood: "Teca", origin: "Tierras del Beni" },
 ];
 
 export function BrandStory() {
   return (
-    <section id="nuestra-historia" className="flex flex-col md:flex-row items-stretch scroll-mt-20" style={{ minHeight: '680px' }}>
-
+    <section
+      id="nuestra-historia"
+      className="flex flex-col md:flex-row items-stretch scroll-mt-20"
+      style={{ minHeight: "680px" }}
+    >
       {/* Left: craftsman image with identity layer */}
-      <Reveal className="w-full md:w-[42%] min-h-[300px] md:min-h-0" direction="none">
+      <Reveal
+        className="w-full md:w-[42%] min-h-[300px] md:min-h-0"
+        direction="none"
+      >
         <div className="bg-cx-teak w-full h-full min-h-[300px] relative overflow-hidden flex items-center justify-center">
           {/* Craftsman photo */}
           <img
-            src="/Public/AboutUs/image1.webp"
+            src="/public/AboutUs/image1.webp"
             alt="Maestro artesano trabajando la madera"
             loading="lazy"
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.display = "none";
+            }}
           />
           {/* Warm teak tint overlay */}
         </div>
@@ -29,14 +37,13 @@ export function BrandStory() {
 
       {/* Right: story content */}
       <div className="w-full md:w-[58%] bg-cx-walnut text-primary-foreground flex flex-col justify-center px-12 py-16 md:px-16 lg:px-20">
-
         <Reveal className="mb-8" delay={80}>
           <span className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-6 block">
             Nuestra Historia
           </span>
           <h2
             className="font-black leading-[1.1]"
-            style={{ fontSize: 'clamp(32px, 4.2vw, 52px)' }}
+            style={{ fontSize: "clamp(32px, 4.2vw, 52px)" }}
           >
             Cada mueble cuenta una historia.
           </h2>
@@ -44,8 +51,10 @@ export function BrandStory() {
 
         <Reveal className="mb-10" delay={160}>
           <p className="text-base leading-relaxed opacity-80">
-            En Amara Muebles trabajamos exclusivamente con maderas de alta calidad de [Lugar]. Cada pieza tarda entre tres y seis
-            semanas en completarse, respetando los tiempos de la madera, no los de una fábrica.
+            En Amara Muebles trabajamos exclusivamente con maderas de alta
+            calidad de [Lugar]. Cada pieza tarda entre tres y seis semanas en
+            completarse, respetando los tiempos de la madera, no los de una
+            fábrica.
           </p>
         </Reveal>
 
@@ -70,7 +79,9 @@ export function BrandStory() {
         <Reveal delay={420}>
           <div className="mt-10 border-t border-primary-foreground/15 pt-6">
             <a
-              href={contactWhatsappUrl('Hola, me gustaría conversar sobre un mueble para mi hogar.')}
+              href={contactWhatsappUrl(
+                "Hola, me gustaría conversar sobre un mueble para mi hogar.",
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors underline underline-offset-4"
@@ -79,7 +90,6 @@ export function BrandStory() {
             </a>
           </div>
         </Reveal>
-
       </div>
     </section>
   );
