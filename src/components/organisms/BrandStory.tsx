@@ -22,7 +22,7 @@ export function BrandStory() {
         <div className="bg-cx-teak w-full h-full min-h-[300px] relative overflow-hidden flex items-center justify-center">
           {/* Craftsman photo */}
           <img
-            src="/public/AboutUs/image1.webp"
+            src="/AboutUs/image1.webp"
             alt="Maestro artesano trabajando la madera"
             loading="lazy"
             decoding="async"
