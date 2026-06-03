@@ -27,8 +27,9 @@ function categoryFromId(id: string): string {
   if (id.startsWith('sofa'))    return 'Sofás';
   if (id.startsWith('comedor')) return 'Comedores';
   if (id.startsWith('mesa'))    return 'Mesas';
-  if (id.startsWith('silla'))   return 'Sillas';
   if (id.startsWith('sillon'))  return 'Sillones';
+  if (id.startsWith('silla'))   return 'Sillas';
+  if (id.startsWith('cama'))    return 'Camas';
   return '';
 }
 

@@ -7,6 +7,7 @@ const CATEGORY_OPTIONS = [
   { label: 'Mesas',     count: 3 },
   { label: 'Sillas',    count: 3 },
   { label: 'Sillones',  count: 3 },
+  { label: 'Camas',     count: 4 },
 ];
 
 interface SidebarFiltersProps {
