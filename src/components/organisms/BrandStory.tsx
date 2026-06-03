@@ -52,7 +52,7 @@ export function BrandStory() {
         <Reveal className="mb-10" delay={160}>
           <p className="text-base leading-relaxed opacity-80">
             En Amara Muebles trabajamos exclusivamente con maderas de alta
-            calidad de [Lugar]. Cada pieza tarda entre tres y seis semanas en
+            calidad. Cada pieza tarda entre tres y seis semanas en
             completarse, respetando los tiempos de la madera, no los de una
             fábrica.
           </p>
