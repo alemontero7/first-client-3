@@ -6,7 +6,7 @@ export function CatalogPage() {
     <>
       <Helmet>
         <title>Catálogo</title>
-        <meta name="description" content="Catálogo completo de muebles artesanales: sofás, comedores, mesas, sillas, sillones y camas. Cedro, roble y maderas alternativas talladas a mano en Cochabamba, Bolivia." />
+        <meta name="description" content="Catálogo completo de muebles artesanales: sofás, comedores, mesas, sillas, sillones y camas. Roble, cedro, mara macho y maderas selectas de zonas tropicales de Bolivia." />
       </Helmet>
       <CatalogTemplate />
     </>

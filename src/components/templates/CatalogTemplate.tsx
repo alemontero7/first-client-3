@@ -101,9 +101,9 @@ export const CatalogTemplate: React.FC = () => {
           </Reveal>
           <Reveal direction="none" delay={160}>
             <p className="text-lg text-muted-foreground">
-              Cada pieza es tallada a mano por nuestros artesanos. Cedro, eucalipto, 
-              pino y maderas seleccionadas, trabajadas con oficio para dar calidez y 
-              carácter a tu hogar.
+              Cada pieza es trabajada a mano por nuestros artesanos. Roble, cedro,
+              mara macho y otras maderas selectas de zonas tropicales de Bolivia,
+              con oficio y detalle para transformar cada espacio.
             </p>
           </Reveal>
         </section>

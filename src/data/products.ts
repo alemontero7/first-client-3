@@ -22,8 +22,8 @@ export const products: Product[] = [
     id: 'sofa-amara-1',
     name: 'Sofá Amara 1',
     description:
-      'Sofá de tres plazas con estructura interna de eucalipto, tapizado en lino natural de alta resistencia. Cojines de espuma HR de 30 kg/m³ con funda removible. Diseño de líneas limpias que se adapta a espacios contemporáneos.',
-    material: 'Eucalipto y Lino Natural',
+      'Sofá de tres plazas con estructura interna de roble boliviano, tapizado en lino natural de alta resistencia. Cojines de espuma HR de 30 kg/m³ con funda removible. Diseño de líneas limpias que se adapta a espacios contemporáneos.',
+    material: 'Roble y Lino Natural',
     images: [
       '/Products/Sofas/Sofa1/foto1.webp',
       '/Products/Sofas/Sofa1/foto2.webp',
@@ -92,8 +92,8 @@ export const products: Product[] = [
     id: 'comedor-amara-2',
     name: 'Comedor Amara 2',
     description:
-      'Conjunto rústico para ocho personas en madera de pino macizo barnizado en tono miel. Sillas con respaldo de tablillas y asiento tapizado en cuero genuino. Resistencia y calidez para reuniones familiares.',
-    material: 'Pino Macizo Barnizado',
+      'Conjunto rústico para ocho personas en madera de cedro boliviano barnizado en tono miel. Sillas con respaldo de tablillas y asiento tapizado en cuero genuino. Resistencia y calidez para reuniones familiares.',
+    material: 'Cedro Boliviano Barnizado',
     images: [
       '/Products/Comedores/Comedor2/foto0.webp',
       '/Products/Comedores/Comedor2/foto1.webp',
@@ -163,8 +163,8 @@ export const products: Product[] = [
     id: 'mesa-amara-2',
     name: 'Mesa Amara 2',
     description:
-      'Mesa de comedor circular con tablero de teka Masisa de 36 mm de espesor y base central en madera torneada. Capacidad para cuatro a seis comensales. Superficie tratada con barniz poliuretano de alta resistencia.',
-    material: 'Teka Masisa',
+      'Mesa de comedor circular con tablero de cedro boliviano de 36 mm de espesor y base central en madera torneada. Capacidad para cuatro a seis comensales. Superficie tratada con barniz poliuretano de alta resistencia.',
+    material: 'Cedro Boliviano',
     images: [
       '/Products/Mesas/Mesa2/foto0.webp',
       '/Products/Mesas/Mesa2/foto1.webp',

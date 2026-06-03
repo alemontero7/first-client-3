@@ -8,7 +8,7 @@ const locations = [
     hours: 'Lun–Vie 9:00–12:00 · 14:00–18:00',
     phone: '+591 79785827',
     mapsUrl:
-      'https://maps.google.com/?q=Km+9+Blanco+Galindo+Norte,+Calle+Hilarión+Daza,+Colcapirhua,+Cochabamba,+Bolivia',
+      'https://www.google.com/maps?q=-17.3852235,-66.241508&z=17&hl=es',
   }
 ];
 

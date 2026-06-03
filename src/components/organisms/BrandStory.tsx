@@ -2,9 +2,10 @@ import { Reveal } from "../atoms/Reveal";
 import { contactWhatsappUrl } from "../../lib/whatsapp";
 
 const materials = [
-  { wood: "Nogal", origin: "Valle de Cochabamba" },
-  { wood: "Roble", origin: "Santa Cruz" },
-  { wood: "Teca", origin: "Tierras del Beni" },
+  { wood: "Nogal", origin: "Zonas tropicales de Bolivia" },
+  { wood: "Roble", origin: "Zonas tropicales de Bolivia" },
+  { wood: "Cedro", origin: "Zonas tropicales de Bolivia" },
+  { wood: "Mara Macho", origin: "Zonas tropicales de Bolivia" },
 ];
 
 export function BrandStory() {

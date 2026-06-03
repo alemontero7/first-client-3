@@ -24,7 +24,7 @@ export function ShopItem({ product, variant = 'tall' }: ShopItemProps) {
       </div>
       <div className="mb-4">
         <h3 className="text-xs text-cx-walnut uppercase tracking-widest">{product.name}</h3>
-        <p className="text-foreground font-semibold mt-0.5">Bs. {product.price.toLocaleString()}</p>
+        {/* price hidden */}
         <p className="text-muted-foreground text-xs mt-1">{product.material}</p>
       </div>
       <a

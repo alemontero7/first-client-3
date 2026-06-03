@@ -24,7 +24,7 @@ export function ProductCard({ product }: { product: Product }) {
 
       <h3 className="text-lg font-medium text-foreground mb-1">{product.name}</h3>
       <p className="text-primary text-xs uppercase tracking-widest">{product.material}</p>
-      <p className="text-cx-rolling-stone text-sm mt-1 mb-5">Bs. {product.price.toLocaleString()}</p>
+      {/* price hidden */}
 
       <a
         href={waUrl}

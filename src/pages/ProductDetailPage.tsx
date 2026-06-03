@@ -155,9 +155,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3">
               {product.name}
             </h1>
-            <p className="text-2xl font-semibold text-cx-walnut mb-6">
-              Bs. {product.price.toLocaleString()}
-            </p>
+            {/* price hidden */}
 
             {/* Description */}
             <p className="text-base text-muted-foreground leading-relaxed mb-8">
@@ -253,9 +251,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
                     </h3>
                     <p className="text-sm text-muted-foreground">{rec.material}</p>
                   </div>
-                  <span className="text-sm text-foreground font-medium shrink-0">
-                    Bs. {rec.price.toLocaleString()}
-                  </span>
+                  {/* price hidden */}
                 </div>
               </button>
             ))}

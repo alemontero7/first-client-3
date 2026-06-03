@@ -56,9 +56,7 @@ export const CatalogProductCard: React.FC<{ product: Product }> = ({ product }) 
           </h3>
           <p className="text-sm text-muted-foreground">{product.material}</p>
         </div>
-        <span className="text-base text-foreground font-medium">
-          Bs. {product.price.toLocaleString()}
-        </span>
+        {/* price hidden */}
       </div>
     </div>
   );
