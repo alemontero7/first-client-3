@@ -1,12 +1,6 @@
 import { Reveal } from "../atoms/Reveal";
 import { contactWhatsappUrl } from "../../lib/whatsapp";
 
-const materials = [
-  { wood: "Nogal", origin: "Zonas tropicales de Bolivia" },
-  { wood: "Roble", origin: "Zonas tropicales de Bolivia" },
-  { wood: "Cedro", origin: "Zonas tropicales de Bolivia" },
-  { wood: "Mara Macho", origin: "Zonas tropicales de Bolivia" },
-];
 
 export function BrandStory() {
   return (
@@ -62,17 +56,13 @@ export function BrandStory() {
         {/* Material origins */}
         <Reveal delay={320}>
           <div className="mt-10">
-            <p className="text-[10px] uppercase tracking-[0.25em] opacity-50 mb-4">
+            <p className="text-[10px] uppercase tracking-[0.25em] opacity-50 mb-3">
               Hecho con madera Boliviana
             </p>
-            <div className="flex flex-wrap gap-x-8 gap-y-3">
-              {materials.map((m) => (
-                <div key={m.wood} className="flex items-baseline gap-2">
-                  <span className="text-sm font-semibold">{m.wood}</span>
-                  <span className="text-xs opacity-70">{m.origin}</span>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm font-semibold">
+              Nogal, Roble, Cedro y Mara Macho{" "}
+              <span className="font-normal opacity-70">de zonas tropicales de Bolivia</span>
+            </p>
           </div>
         </Reveal>
 
