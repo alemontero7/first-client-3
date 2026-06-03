@@ -245,6 +245,76 @@ export const products: Product[] = [
     weight: '7 kg',
   },
 
+  // ── Camas ─────────────────────────────────────────────────────────────────
+  {
+    id: 'cama-amara-1',
+    name: 'Cama Amara 1',
+    description:
+      'Cama matrimonial con cabecera tapizada en tela bouclé crema y estructura de madera maciza nacional. Base con cajones de almacenamiento integrados y láminas de soporte reforzadas. Diseño cálido y funcional para el dormitorio moderno.',
+    material: 'Madera Maciza y Tela Bouclé',
+    images: [
+      '/Products/Camas/Cama1/foto0.webp',
+      '/Products/Camas/Cama1/foto1.webp',
+      '/Products/Camas/Cama1/foto2.webp',
+      '/Products/Camas/Cama1/foto3.webp',
+      '/Products/Camas/Cama1/foto4.webp',
+    ],
+    price: 8900,
+    section: 'shop',
+    dimensions: '160 × 200 × 120 cm',
+    weight: '65 kg',
+  },
+  {
+    id: 'cama-amara-2',
+    name: 'Cama Amara 2',
+    description:
+      'Cama de dos plazas con cabecera de tablillas en roble natural y base plataforma de perfil bajo. Estructura sólida con soporte central de refuerzo. Acabado en aceite de linaza que resalta la veta natural de la madera.',
+    material: 'Roble Natural',
+    images: [
+      '/Products/Camas/Cama2/foto0.webp',
+      '/Products/Camas/Cama2/foto1.webp',
+      '/Products/Camas/Cama2/foto2.webp',
+      '/Products/Camas/Cama2/foto3.webp',
+    ],
+    price: 7200,
+    section: 'shop',
+    dimensions: '140 × 200 × 100 cm',
+    weight: '52 kg',
+  },
+  {
+    id: 'cama-amara-3',
+    name: 'Cama Amara 3',
+    description:
+      'Cama king size con cabecera tapizada en cuero genuino color camel y patas en madera torneada de cedro boliviano. Base box con altura regulable. Una pieza de autor que combina confort y elegancia para dormitorios de lujo.',
+    material: 'Cuero Genuino y Cedro Boliviano',
+    images: [
+      '/Products/Camas/Cama3/foto0.webp',
+      '/Products/Camas/Cama3/foto1.webp',
+      '/Products/Camas/Cama3/foto3.webp',
+    ],
+    price: 12400,
+    section: 'featured',
+    dimensions: '200 × 200 × 130 cm',
+    weight: '80 kg',
+  },
+  {
+    id: 'cama-amara-4',
+    name: 'Cama Amara 4',
+    description:
+      'Cama matrimonial de estilo rústico con cabecera y pie de cama en mara macho maciza con tallado artesanal. Base de listones de madera con separación óptima para la ventilación del colchón. Cada pieza es única por la naturaleza del material.',
+    material: 'Mara Macho Maciza',
+    images: [
+      '/Products/Camas/Cama4/foto0.webp',
+      '/Products/Camas/Cama4/foto1.webp',
+      '/Products/Camas/Cama4/foto2.webp',
+      '/Products/Camas/Cama4/foto3.webp',
+    ],
+    price: 10500,
+    section: 'shop',
+    dimensions: '160 × 200 × 140 cm',
+    weight: '72 kg',
+  },
+
   // ── Sillones ──────────────────────────────────────────────────────────────
   {
     id: 'sillon-amara-1',
