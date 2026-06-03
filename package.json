@@ -6,7 +6,7 @@
   "homepage": "https://amaramuebles.bo",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && react-snap",
+    "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "reactSnap": {
